@@ -1,5 +1,5 @@
 server:
-  port: 8091
+  port: 8093
 
 
 spring:
@@ -21,8 +21,10 @@ spring:
     hibernate:
       ddl-auto: create-drop
     properties:
-      hibernate:
-        dialect: org.hibernate.dialect.PostgresSQlDialect
+      database-platform=org:
+        hibernate:
+          dialect:
+            PostgreSQLDialect:
 
 logging:
   level:

@@ -21,8 +21,21 @@ spring:
     hibernate:
       ddl-auto: create-drop
     properties:
-      hibernate:
-        dialect: org.hibernate.dialect.PostgresSQlDialect
+      database-platform=org:
+        hibernate:
+          dialect:
+            PostgreSQLDialect:
+
+
+  # specify the hibernate dialect
+  #spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+  #spring.jpa.properties.database-platform=org.hibernate.dialect.PostgreSQLDialect
+  # tell hibernate not to query the database for jdbc metadata, because we don't have a tenant context at boot
+  #spring.jpa.properties.hibernate.temp.use_jdbc_metadata_defaults=false
+  # tell hibernate to not do auto ddl
+  #spring.jpa.properties.hibernate.hbm2ddl.auto=none
+  # tell hibernate to log sql, useful for development
+  #spring.jpa.properties.hibernate.show_sql=false
 
 logging:
   level:

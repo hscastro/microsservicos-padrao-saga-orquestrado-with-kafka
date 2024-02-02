@@ -33,7 +33,7 @@ services:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
     ports:
-      - 5432:5433
+      - 5433:5432
   inventory-db:
     image: postgres:latest
     container_name: inventory-db
@@ -44,7 +44,7 @@ services:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
     ports:
-      - 5432:5434
+      - 5434:5432
 
   kafka:
     container_name: kafka

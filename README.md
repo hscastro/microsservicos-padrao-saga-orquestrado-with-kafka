@@ -1,8 +1,10 @@
-# order-service
-# inventory-service
-# product-validation-service
-# orchestrator-service
-# payment-service
+# Estrutura do projeto
+
+<h3>order-service</h3>
+<h3> inventory-service</h3>
+<h3> product-validation-service</h3>
+<h3> orchestrator-service</h3>
+<h3> payment-service</h3>
 
 
 <h3> Em desenvolvimento,...</h3>

@@ -1,4 +1,4 @@
-# Arquitetura de Microsserviços: Padrão Saga Orquestrado com Spring Boot 3, PostgreSQL, MongoDB e Apache Kafka
+# Projeto: Arquitetura de Microsserviços - Padrão Saga Orquestrado com Spring Boot 3, PostgreSQL, MongoDB e Apache Kafka
 
 <h3>order-service</h3>
 <h3> inventory-service</h3>
@@ -7,7 +7,7 @@
 <h3> payment-service</h3>
 
 
-<h3> Em desenvolvimento,...</h3>
+<h4> Em desenvolvimento,...</h4>
 
 <h2>Microsserviços Java com Spring Boot e Apache Kafka</h2>
 
@@ -22,6 +22,7 @@
 1.7 Docker-compose<br/>
 
 <h3>Fase 2: Ferramentas utilizadas </h3>
+
 1.1 IntelliJ IDEA Community Edition<br/>
 1.2 Docker<br/>
 1.3 Maven<br/>

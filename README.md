@@ -1,4 +1,4 @@
-# Estrutura do projeto
+# Arquitetura de Microsserviços: Padrão Saga Orquestrado com Spring Boot 3, PostgreSQL, MongoDB e Apache Kafka
 
 <h3>order-service</h3>
 <h3> inventory-service</h3>
@@ -21,7 +21,12 @@
 1.6 Containers com o Docker<br/>
 1.7 Docker-compose<br/>
 
-<h3>Fase 2: Estrutura e comunicação entre os microsseriços </h3>
+<h3>Fase 2: Ferramentas utilizadas </h3>
+1.1 IntelliJ IDEA Community Edition<br/>
+1.2 Docker<br/>
+1.3 Maven<br/>
+
+<h3>Fase 3: Estrutura e comunicação entre os microsseriços </h3>
 
 1.1 Estrutura dos projeto <br/>
 1.2 Implementar o projeto order-service<br/>

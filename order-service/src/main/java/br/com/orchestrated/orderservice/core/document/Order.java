@@ -16,6 +16,7 @@ import java.util.List;
 @NoArgsConstructor
 @Document(collation = "order")
 public class Order {
+
     @Id
     private String id;
     private List<OrderProducts> products;

@@ -19,10 +19,10 @@ public class OrderService {
 
     public static final String TRANSACTION_ID_PATTERN = "%s_%s";
 
-    private final EventService eventService;
+    private final EventService service;
     private final SagaProducer producer;
     private final JsonUtil jsonUtil;
-    private final OrderRepository orderRepository;
+    private final OrderRepository repository;
 
 
     public Order createOrder(OrderRequest orderRequest){
@@ -33,9 +33,8 @@ public class OrderService {
                         String.format(TRANSACTION_ID_PATTERN, Instant.now().toEpochMilli(), UUID.randomUUID()))
                 .build();
 
-        orderRepository.save(order);
+        repository.save(order);
         producer.sendEvent(jsonUtil.toJson(createPayload(order)));
-
         return order;
     }
 
@@ -44,9 +43,9 @@ public class OrderService {
                 .orderId(order.getId())
                 .transactionId(order.getTransactionId())
                 .payload(order)
-                .createAt(LocalDateTime.now())
+                .createdAt(LocalDateTime.now())
                 .build();
-        eventService.save(event);
+        service.save(event);
         return event;
     }
 

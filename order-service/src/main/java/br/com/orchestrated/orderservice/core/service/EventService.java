@@ -10,9 +10,8 @@ import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
 import java.util.List;
-import java.util.Optional;
+import static org.springframework.util.ObjectUtils.isEmpty;
 
-import static io.micrometer.common.util.StringUtils.isEmpty;
 
 @Slf4j
 @Service
@@ -30,7 +29,7 @@ public class EventService {
 
     public Event findByFilters(EventFilters filters){
         validateEmptyFilter(filters);
-        if (! isEmpty(filters.getOrderId())){
+        if (!isEmpty(filters.getOrderId())){
             return findOrderById(filters.getOrderId());
         }else{
             return findTransactionById(filters.getTransactionId());

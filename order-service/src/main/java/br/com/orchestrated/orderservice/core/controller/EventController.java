@@ -24,5 +24,4 @@ public class EventController {
     public List<Event> findAll(){
         return eventService.findAll();
     }
-
 }

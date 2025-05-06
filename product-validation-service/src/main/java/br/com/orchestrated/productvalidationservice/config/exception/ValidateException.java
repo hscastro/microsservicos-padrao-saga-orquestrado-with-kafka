@@ -1,11 +1,11 @@
-package br.com.orchestrated.orderservice.config.exception;
+package br.com.orchestrated.productvalidationservice.config.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
 @ResponseStatus(HttpStatus.BAD_REQUEST)
-public class ValidationException extends RuntimeException {
-    public ValidationException(String message) {
+public class ValidateException extends RuntimeException {
+    public ValidateException(String message) {
         super(message);
     }
 }

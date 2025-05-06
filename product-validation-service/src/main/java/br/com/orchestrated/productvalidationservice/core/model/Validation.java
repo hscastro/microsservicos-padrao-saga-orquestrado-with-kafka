@@ -42,7 +42,7 @@ public class Validation {
         updatedAt = now;
     }
 
-    @PrePersist
+    @PreUpdate
     public void preUpdate(){
         updatedAt = LocalDateTime.now();
     }
